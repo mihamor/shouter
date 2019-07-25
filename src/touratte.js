@@ -5,7 +5,6 @@ function Dispatcher(dataList){
   let timerId = null;
 
   const onDispatch = () => {
-   
     if(!isDispatching) return;  
     randomDispatchTime = getRandomInteger(1000, 5000);
     const randomAuthorId = getRandomInteger(0, dataList.length - 1);

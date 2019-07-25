@@ -10,7 +10,6 @@ window.onload = onLoad;
 
 
 function onShout(event){
-
   const author = event.detail.author;
   incrementCounterNode(counterSectionEl, author._id);
 
