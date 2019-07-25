@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tourette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <div class="content__section">
+      <h1 class="content__heading">Tourette</h1>
+      <div id="counter-wrapper"></div>
+      <button id="dispatch-button" class="content__button">Stop dispatch</button>
+    </div>  
+  </div>
+
+  <div id="section" class="comment-section">
+  </div>
+
+  <template id="counter-template">
+    <div class="counter">
+      <span class="counter__author-name"></span> shouted <span class="counter__value"></span> times...
+    </div>
+  </template>
+
+  <template id="comment-template">  
+    <div class="comment comment_highlighted">
+      <div class="clearfix">
+        <div class="comment__autor"></div>
+        <div class="comment__date"></div>
+      </div>  
+      <hr class="comment__separator"/>
+      <div class="comment__content"></div>
+    </div>
+  </template>
+  
+  <script src="src/data.js"></script>
+  <script src="src/utils.js"></script>
+  <script src="src/touratte.js"></script>
+  <script src="src/renderer.js"></script>
+</body>
+</html>
